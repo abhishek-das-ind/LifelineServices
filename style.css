@@ -1,0 +1,323 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.Body1{
+    background: #B5FFD9;
+}
+.main{
+    background-image: url(https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.Service{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    overflow: hidden;
+
+    color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+    
+    /* padding: 5px; */
+}
+.Service span{
+    position: relative;
+    z-index: 1;
+}
+.Service::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #1011119d;
+    transition: width 0.5s, height 0.5s;
+}
+.Service:hover::before{
+    width: 500px;
+    height: 500px;
+}
+/* .Electrician{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(255,255,255,0.0);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+.Plumber{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+.Technician{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+
+    color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+.Cook{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+
+     color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+.TouristGuide{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+
+     color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+.Laundary{
+    width: 300px;
+    height: 150px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+
+     color: white;
+    background-color: rgba(255,255,255,0.08);
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+} */
+.bannerDiv{
+    padding: 60px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background: #5F7A61;
+    color: white;
+    padding-top: 10px;
+}
+
+.RegisterCard{
+    margin: 50px;
+    color: white;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.1);
+
+    background-color: rgba(255,255,255,0.1);
+}
+header{
+    margin: 50px;
+}
+.Body{
+    background-image: url(https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+}
+.RegisterBtn{
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+.RegisterBtn:hover{
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+.CardTitle{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2.5rem;
+    z-index: -1;
+    top: -1rem;
+    right: 2.5rem;
+}
+.container2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.address{
+    margin: 50px;
+}
+.EmplyeeCard{
+    margin: 50px;
+    margin-bottom: 0;
+}
+.BookButton{
+    margin: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.AddressCard{
+    margin: 50px;
+    color: white;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.1);
+
+    background-color: rgba(255,255,255,0.1);
+}
+.EmplyeeCard{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.1);
+
+    background-color: rgba(255,255,255,0.1);
+}
+.BookPayButton:hover{
+    background: black;
+    color: white;
+    box-shadow: grey;
+}
+
+.navbar{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+
+    background-color: rgba(255,255,255,0.1);
+}
+.employeeProfile{
+    /* margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white; */
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    /* box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5); */
+
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.1);
+
+    /* background-color: rgba(255,255,255,0.1); */
+}
